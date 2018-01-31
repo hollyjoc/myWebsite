@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyWebsite</title>
-    <%= csrf_meta_tags %>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAUmztAF5n3gAUAp0AamPSAElU5QCDcPgATE7uAHmJ8gCJe+MAXXL2AAgbWQAfL8kAVUbxAD442gBidPMATFzrAGdz8AAwKL0AQEDXAI+K2gBrb/YAUGToAKCf/QBDgdwAZljWAKCr/QBTae4AGEiOAHtt+QCFd9gASE/gAEhL5gAxPNUAiaL+AHdsuAASDa0AXWv9ABYNtgBIXfgAbnLuAIOP8wBmaL8ARTb5AEZE5ABtfPoAQ0zqAB0ezgBiYuwATVXYACckvAA4NOIAZmvsAKOf2wB8dL8AZHT1AGN5+wBRX+0AjIb0AEFH3AA8Ov0AU2v2AFth8wAdFNUAiZr6AIGk/QA0NdQABhhTACgcwAB3hPgAeIX7ACwjugBPXdYAUlPlABUHygB7jvsAa2/wADZT1AAqJ9gAioz1AHVy+QCNk/gAboX8AIuj8gBsZ+sAWlvIAD4+3gBWU+8AgnLEAFpR8gAtKtkAfXDiAHRz9ABhXuMAKy+PABACtAAPCa4ASlHhACcaxQBwivoAeXC2AIaD3ABjavUAXHP+AEQ52QCLfvoAU1vtAGt18gBtZ6UAh4/3ADMqbwCOiPQAh5D6AF1h7QBIRuUAR0foAHl37wBDUuUAbFrhAHaC/gCXk/oAGQisAHFt0gB5iP4AOTbsAIty+wBGOdEAV1zoAGl3+QB3c/8AISO+AIig/gAkJ7gAiYXJAHSE/AAXB7MAPDXhAD8w5ABMWO8AUlrsACgi3wAUFcsABxeKAFpl6QAJHpYAYWfmAHGB/QB2gfQAlZT2AGBm9QA2N98Ain7ZAIaH/QA/ROIAKTDUAFVX9gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbhlYAAAAAAAAAAAAAAAAAH4oaQAAAAAAAAAAAAAEelWEhgh2l5c2AAAAAAA6eBU+glJjSUUwlwAAAAAeAkCDClY4JZuSARMAAAAAbFMbQRYrfDyMYRJdAAAAAAAaIj0nSi8DeWgFSDQAAAAAlXIsiV4LGEcmQh93lAAATC6aP4eOQxxEjZkQRk8AFCk5OyRZM5BNDA1zi4FbAABRfzKTTloOX2IHZ2sjAAAAACpQanWWiCFgcRF7AAAAAAAAXI+AD1eKIDFUcGQAAAAAAAZtS3RmNy2RHX0AAAAAAAAAhQAAb5gXNQAAAAAAAAAAAAAAAABlCQAAAAAAAPx/AAD8fwAA4AcAAMAHAACABwAAgAcAAMADAADAAQAAgAEAAAABAACAAwAAwAcAAOADAADgBwAA9h8AAP8/AAA=" rel="icon" type="image/x-icon" />
+    <title>Holly Calloway</title>
 
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <%= yield %>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class='container'>
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+                <span class="sr-only">Tottle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button> 
+              <%= link_to root_path, class: 'navbar-brand' do %>
+              <i class="fa fa-group"></i>
+              <%= link_to "Home", root_path, class: 'navbar-brand' %>
+              <% end %>
+          </div>
+
+          <div class="collapse navbar-collapse" id="main-nav-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "About",  about_path %></li>
+              <li><%= link_to "Contact Us", new_contact_path %></li>
+            </ul>
+    
+          </div><!-- /.navbar-collapse -->
+       </div> 
+    </nav>
+    
+    <div class="container">
+      <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"> <%= value %> </div>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,0 +1,37 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+	background: #16222A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fa-group
+{
+	color: #FFFFFF;
+}
+
+.about_page {
+	background: #F3DDDD;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+
+#picture {
+	padding-left: 16px;
+}
+
+.signature {
+ 	font: 200 40px/0.8 'Great Vibes', Helvetica, sans-serif;
+  	color: #4C4141;
+  	text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+  	text-align: center;
+}
+
+.col-sm-4
+{
+	padding-top: 30px;
+}
