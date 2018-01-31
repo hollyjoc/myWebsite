@@ -96,7 +96,7 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.3.0)
-    pg (1.0.0-x64-mingw32)
+    pg (0.21.0-x64-mingw32)
     public_suffix (3.0.1)
     puma (3.11.2)
     rack (2.0.3)
@@ -191,7 +191,7 @@ DEPENDENCIES
   font-awesome-sass (~> 4.7.0)
   jbuilder (~> 2.5)
   jquery-rails
-  pg
+  pg (~> 0.20)
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails_12factor
