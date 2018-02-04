@@ -4,31 +4,64 @@
 @import "font-awesome";
 
 body {
-	background: #16222A;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #404040;
 }
 
-.fa-group
-{
+
+.navbar.navbar-inverse.navbar-static-top {
+	background: #BE6565;
+	font-family: Lato;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
+}
+
+
+.fa-group {
 	color: #FFFFFF;
 }
 
+.col-sm-4{
+	margin-top: 15%;
+	margin-bottom: 180px;
+}
+
+.col-sm-8 {
+	margin-top: 15%;
+}
+
+#logo_git {
+	margin-left: 5%;
+	margin-right: 1%;
+}
+
+#logo_linked {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#logo_ruby{
+	margin-left: 8%;
+	margin-right: 2%;
+}
+
 .about_page {
-	background: #F3DDDD;
-	font-family: "Times New Roman", Times, serif;
+	color: #B3B3B3;
 	font-size: 14px;
+	font-family: Lato;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
 }
-
-#picture {
-	padding-left: 16px;
-}
-
 .signature {
  	font: 200 40px/0.8 'Great Vibes', Helvetica, sans-serif;
-  	color: #4C4141;
+  	color: #B3B3B3;
   	text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
   	text-align: center;
+  	margin-top: 10%;
 }
 
 .col-sm-4
