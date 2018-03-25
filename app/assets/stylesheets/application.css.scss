@@ -222,6 +222,29 @@ body {
 	background-color: #6BBE9F;
 }
 
+.home_page {
+	color: #B3B3B3;
+	font-family: Lato;
+	font-style: normal;
+	font-variant: normal;
+}
+
+#home_current, #home_news {
+	color: #6BBE9F;
+}
+
+#home_col-8 {
+	width: 45%;
+	float: left;
+	margin-right: 5%
+}
+
+#home_col-4 {
+	width: 45%;
+	float:right;
+}
+
+
 @media only screen and (max-width: 1000px) {
 	
 	#about_col-4, #about_col-8 {
@@ -254,5 +277,13 @@ body {
 
 	#resume_col-4 {
 		display: none;
+	}
+
+	#home_col-8, #home_col-4 {
+		width: 100%;
+		margin-left:auto;
+		margin-right: auto;
+		display: block;
+		padding-left: 10%;
 	}
 }	
