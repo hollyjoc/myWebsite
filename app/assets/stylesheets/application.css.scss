@@ -127,6 +127,46 @@ body {
 	padding-bottom: 2%;
 }
 
+#resume_container {
+	width: 100%;
+	background-color: #ddd;
+	padding: 0%;
+}
+
+.skills {
+	text-alight: right;
+	padding-right: 20px;
+	line-height: 10px;
+	color: #FFFFFF;
+}
+
+.java {
+	width: 90%;
+	background-color:#6BBE9F;
+}
+
+.javaScript {
+	width: 70%;
+	background-color:#6BBE9F;
+}
+
+.python {
+	width: 70%;
+	background-color:#6BBE9F;
+}
+
+.html {
+	width: 80%;
+	background-color:#6BBE9F;
+}
+
+.ruby {
+	width: 70%;
+	background-color:#6BBE9F;
+}
+
+
+
 @media only screen and (max-width: 1000px) {
 	
 	#about_col-4, #about_col-8 {
@@ -154,6 +194,9 @@ body {
 	#resume_col-4 {
 		display: none;
 	}
+
+	
+
 }
 	
 
