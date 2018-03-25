@@ -53,6 +53,23 @@ body {
 	line-height: 15.4px;
 }
 
+#about_title {
+	color: #6BBE9F;
+} 
+
+.fa-linkedin-in {
+	margin-left: 6%;
+	margin-right: 3%;
+}
+
+.fa-envelope {
+	margin-left: 3%;
+}
+
+.fa-linkedin-in:hover, .fa-envelope:hover, .fa-github:hover {
+	color: #6BBE9F;
+}
+
 #resume_col-8 {
 	width: 50%;
 	float: left;
@@ -101,7 +118,7 @@ body {
 	padding-right: 2%;
 }
 
-#resume_aboutMe_text {
+#resume_overview_text {
 	padding-top: 1%;
 	padding-bottom:2%;
 }

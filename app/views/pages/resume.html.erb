@@ -9,10 +9,22 @@
 		<div class="row">
 			<div class="col-8" id="resume_col-8">
 				<h1 id="resume_name">HOLLY CALLOWAY</h1>
-				<h2 id="resume_title">WEB DEVELOPER / IT SPECIALIST</h2>
-				<h3 id="resume_subTitle"><i class="fas fa-angle-double-right"></i>ABOUT ME</h3>
-					<p id="resume_aboutMe_text">
-						My name is Holly Calloway and I'm a Web Developer. I'm currently seeking a position 
+				<h2 id="resume_title">WEB DEVELOPER / IT SPECIALIST <br><br>
+				<%=link_to "https://www.linkedin.com/in/holly-calloway/", target: "_blank" do %>
+						<i class="fab fa-linkedin-in"></i>
+						<% end %>
+				<%=link_to "https://github.com/hollyjoc", target: "_blank" do %>
+				<i class="fab fa-github"></i>
+					<% end %>
+
+					<%=link_to "http://www.hollycalloway.com/contacts/new", target: "_blank" do %>
+				<i class="fas fa-envelope"></i>
+					<% end %></h2>
+
+
+				<h3 id="resume_subTitle"><i class="fas fa-angle-double-right"></i>Overview</h3>
+					<p id="resume_overview_text">
+						My name is Holly Calloway and I'm an inspiring Web & Software Developer. I'm currently seeking a position 
 						where my work ethic and technical skills will allow me to make an immediate contribution 
 						as an integral part of a growing company.
 					</p>
@@ -137,7 +149,13 @@
 				</div>
 				</p>
 
-				<p>HTML/CSS
+				<p>HTML
+				<div class="container" id="resume_container">
+					<div class="skills html">&nbsp</div>
+				</div>
+				</p>
+
+				<p>CSS
 				<div class="container" id="resume_container">
 					<div class="skills html">&nbsp</div>
 				</div>
